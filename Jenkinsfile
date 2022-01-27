@@ -10,7 +10,7 @@ pipeline {
 
         stage('docker run') {
             steps {
-                bat 'docker run -p 3000:3000 mynodeapp'
+                bat 'docker run -p 3000:3000 -d mynodeapp'
             }
         }
     }
